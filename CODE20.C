@@ -1,13 +1,12 @@
 #include<stdio.h>
-void main()
+int main()
 {
- char str[50],str1;
+ char string[50],str1;
  int n,i;
- clrscr();
- scanf("%s",str);
- for(i=0;str[i]!='\0';i++)
+ scanf("%s",string);
+ for(i=0;string[i]!='\0';i++)
  {
-  n=str[i];
+  n=string[i];
   if(n>=88 && n<=90 || n>=120 && n<=122)
   {
    n=n-23;
@@ -17,8 +16,8 @@ void main()
   {
   str1=n+3;
   }
-  str[i]=str1;
+  string[i]=str1;
  }
- printf("%s",str);
- getch();
+ printf("%s",string);
+ return 0;
 }
